@@ -1,7 +1,6 @@
 # GitHub Education Teacher Toolbox
 
-![Teachers image no 2](https://github.com/user-attachments/assets/f0194bb1-4a97-4626-b982-8c40842cfad3)
-
+![Teachers image no 3](https://github.com/user-attachments/assets/c10c5d18-0639-41f4-87a8-e58714925474)
 
 
 ## 👀 How to Use this Guide
