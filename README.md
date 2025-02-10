@@ -12,5 +12,6 @@ The GitHub Educaiton Teacher Toolbox provides support materials for teachers and
 - Empowering your students
 - Videos and Live Training
 - Use Cases & Stories
+- AI in the Classroom
 - [Coming soon] Peer to peer tools
 - [Coming soon] Certification and upskilling
