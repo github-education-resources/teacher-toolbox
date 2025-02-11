@@ -1,0 +1,6 @@
+title: [GitHub Education Teacher Toolbox]
+description: [The Teacher Toolbox is a resource hub for educators and administrators to get started with GitHub.]
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme 
+- jekyll-readme-index
