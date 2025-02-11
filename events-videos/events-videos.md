@@ -2,6 +2,8 @@
 
 Explore upcoming EDU events, live streams and video demos hosted by our team, Campus Experts and partners
 
+## Coming soon: Live trainings for teachers
+
 ## Events
 - [GitHub Events](https://resources.github.com/events/)
 - [GitHub Campus Expert events](https://githubcampus.expert/events)
