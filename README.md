@@ -6,12 +6,12 @@
 ## 👀 How to Use this Guide
 The GitHub Educaiton Teacher Toolbox provides support materials for teachers and administrators. It is divided into the following resource types
 
-- Educator Professional Development
-- Institution and Administrative Resources
-- Empowering your students
-- Videos and Live Training
-- Use Cases & Stories
-- AI in the Classroom
+- [Educator Professional Development](https://github.com/github-education-resources/teacher-toolbox/blob/main/professional-development/professional-resources.md)
+- [Institution and Administrative Resources](https://github.com/github-education-resources/teacher-toolbox/blob/main/admin/schools-and-administrators.md)
+- [Empowering your students](https://github.com/github-education-resources/teacher-toolbox/blob/main/students/student-resources.md)
+- [Videos and Live Training](https://github.com/github-education-resources/teacher-toolbox/blob/main/events-videos/events-videos.md)
+- [Use Cases & Stories](https://github.com/github-education-resources/teacher-toolbox/blob/main/stories/stories-use-cases.md)
+- [AI in the Classroom](https://github.com/github-education-resources/teacher-toolbox/blob/main/ai-education/ai-in-education.md)
 
 ## Start here
 - Get verified as an instructor: Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
