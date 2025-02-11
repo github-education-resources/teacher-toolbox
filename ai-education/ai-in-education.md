@@ -6,7 +6,7 @@
 - [Intro to GitHub Copilot (Microsoft Learn Modules)](https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot/)
 - [Getting Started with GitHub Copilot for Azure](https://techcommunity.microsoft.com/blog/educatordeveloperblog/getting-started-with-github-copilot-for-azure/4290334)
 - [Deploy web apps with help from GitHub Copilot for Azure](https://techcommunity.microsoft.com/blog/educatordeveloperblog/deploy-web-apps-with-help-from-github-copilot-for-azure/4291263)
-- [Students using GitHub Copilot to decode ancient texts](https://github.blog/ai-and-ml/machine-learning/how-students-teamed-up-to-decode-2000-year-old-texts-using-ai/)
+
 
 ## AI Research and Use Cases
 - [How AI code generation works](https://github.blog/ai-and-ml/generative-ai/how-ai-code-generation-works/)
