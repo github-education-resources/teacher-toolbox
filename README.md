@@ -1,5 +1,4 @@
 # GitHub Education Teacher Toolbox
-
 ![Teachers image no 3](https://github.com/user-attachments/assets/c10c5d18-0639-41f4-87a8-e58714925474)
 
 
@@ -25,8 +24,13 @@ New content, upcoming opportunities or important announcements will appear here:
 
 
 ## All Resources
+
+![width teacher image](https://github.com/user-attachments/assets/3d0ba13b-07df-475d-877d-d16515513aea)
+
+
+## Educator Professional Development
 <details><summary>
-Educator Professional Development
+
 </summary>
 
 
@@ -61,9 +65,10 @@ Getting GitHub certified is a resounding endorsement that validates your skills,
 
 
  </details>
- 
+
+## Administrative and Institutional Resources
 <details><summary>
-Administrative and Institutional Resources
+
 </summary>
 
 Learn about getting free GitHub Enterprise through our Campus program,  how you bring GitHub to your campus, Hackathons from an admin's perspective, how researchers use GitHub and helpful tops for navigating Classroom.
@@ -98,8 +103,9 @@ Learn about getting free GitHub Enterprise through our Campus program,  how you 
 
  </details>
 
+## Empowering your students
  <details><summary>
-Empowering your students
+
 </summary>
 
 Discover ways you empower your students with learner resources made just for them including the Student Developer Pack, the Campus Experts program and how they can build a tech community though our partnerships with Hack Club, MLH and Codedex.
@@ -148,8 +154,9 @@ Students can join global community of students who are passionate about building
  </details>
 
 
+## Events, Videos & Live Trainings
   <details><summary>
-Events, Videos & Live Trainings
+
 </summary>
 
 Explore upcoming EDU events, live streams and video demos hosted by our team, Campus Experts and partners
@@ -174,8 +181,9 @@ Explore upcoming EDU events, live streams and video demos hosted by our team, Ca
  </details>
 
 
+## Use Cases & Stories
   <details><summary>
-Use Cases & Stories
+
 </summary>
 
 Find useful blog posts, student stories, school use cases and more. If you have a use case for GitHub success in your classroom or institution, you can submit it here.
@@ -191,8 +199,9 @@ Find useful blog posts, student stories, school use cases and more. If you have 
  </details>
 
 
+## AI in Education
   <details><summary>
-AI in Education
+
 </summary>
 
 ## Copilot Resources
