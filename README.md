@@ -116,6 +116,7 @@ Discover ways you empower your students with learner resources made just for the
 - [GitHub Education for students (Docs)](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students)
 - [GitHub Student Developer Pack](https://education.github.com/pack)
 - [Student Developer Pack Application FAQs & Common Rejection Reasons](https://github.com/orgs/community/discussions/111352)
+- [Games on GitHub](https://github.com/leereilly/games): A list of open source games and game-related projects that can be found on GitHub - old school text adventures, educational games, 8-bit platform games, browser-based games, indie games, GameJam projects, add-ons/maps/hacks/plugins for commercial games, libraries, frameworks, engines, you name it.
 
 ## Campus Experts
 - [Campus Experts Program](https://github.com/education/students/campus-expert)
