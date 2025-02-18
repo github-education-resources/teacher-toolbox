@@ -14,13 +14,15 @@ The GitHub Educaiton Teacher Toolbox provides support materials for teachers and
 
 ## Start here ✔️
 - Stay up to date with all resources by starring 🌟 this repository so you can always find it from your settings.
-- Get verified as an instructor: Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
-- Follow us: LinkedIn, Instagram, Facebook
-- Join the Discussion: Our public Community forum is also a place where you can hear from peers and students
+- [Get verified as an instructor](https://education.github.com/discount_requests/application): Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
+- Follow us: [LinkedIn](https://www.linkedin.com/showcase/github-education), [Instagram](https://www.instagram.com/githubeducation)
+- [Join the Discussion](https://github.com/orgs/community/discussions/categories/github-education): Our public Community forum is also a place where you can hear from peers and students
 - Give feedback: If there's a resource you're looking for or a tool you're using in the classroom that can help your fellow educators, share it with us.
 
 ## New and Featured
 New content, upcoming opportunities or important announcements will appear here:
+- SIGCSE 2025: GitHub Day long workshop resources
+- Copilot for Beginners - Coming soon
 
 
 ## All Resources
