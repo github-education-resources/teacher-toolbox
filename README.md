@@ -75,8 +75,9 @@ Getting GitHub certified is a resounding endorsement that validates your skills,
 
 Learn about getting free GitHub Enterprise through our Campus program,  how you bring GitHub to your campus, Hackathons from an admin's perspective, how researchers use GitHub and helpful tops for navigating Classroom.
 
+Best Practices for Setting Up Your GitHub Enterprise Account for Schools and Teachers
+
  ## Campus Program
-- Campus Program 1 pager
 - [GitHub Campus Program - primary webpage](https://github.com/edu/schools)
 - [GitHub Campus Program - About - documentation](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-program)
 - [About GitHub Enterprise Cloud](https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud)
