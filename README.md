@@ -59,8 +59,6 @@ Getting GitHub certified is a resounding endorsement that validates your skills,
 
 ## Courses
 - [Intro to VS Code for Education](https://learn.microsoft.com/en-us/training/modules/visual-studio-code-education-introduction/)
-- [Intro to Web Dev for Beginners - Curriculum](https://microsoft.github.io/Web-Dev-For-Beginners/#/)
-- [Machine Learning for Beginners - Curriculum](https://microsoft.github.io/ML-For-Beginners/#/)
 - [Mastering GitHub Copilot for Paired Programming - Course](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming?tab=readme-ov-file)
 - [Open Source Learning Path (Intro to Open Source, Becoming a Maintainer)](https://opensauced.pizza/learn/)
 - [Intro to Git & GitHub (Roadmap.sh)](https://roadmap.sh/git-github)
@@ -73,9 +71,15 @@ Getting GitHub certified is a resounding endorsement that validates your skills,
 
 </summary>
 
-Learn about getting free GitHub Enterprise through our Campus program,  how you bring GitHub to your campus, Hackathons from an admin's perspective, how researchers use GitHub and helpful tops for navigating Classroom.
+Learn about getting free GitHub Enterprise through our Campus program,  how you bring GitHub to your campus, Hackathons from an admin's perspective, how researchers use GitHub and helpful curriculum you can use in teaching.
 
 Best Practices for Setting Up Your GitHub Enterprise Account for Schools and Teachers
+
+ ## Curriculum
+- [Intro to Web Dev for Beginners - Curriculum](https://microsoft.github.io/Web-Dev-For-Beginners/#/)
+- [Machine Learning for Beginners - Curriculum](https://microsoft.github.io/ML-For-Beginners/#/)
+- [Arm Education](https://github.com/arm-university): Educational materials created & produced by Arm Education for use by schools, universities and early career engineers
+- [CS50](https://github.com/cs50): Curriculum, lectures and other resources for Harvard's Computer Science 50 course
 
  ## Campus Program
 - [GitHub Campus Program - primary webpage](https://github.com/edu/schools)
