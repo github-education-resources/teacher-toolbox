@@ -42,7 +42,7 @@ Browse through quick start guides, courses, demos and tutorials to get you start
 - [Quickstart for GitHub Educators](https://docs.github.com/en/education/quickstart)
 - [GitHub Education for Teachers](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-teachers)
 - [Skills](https://skills.github.com/)
-- [EDU Resource Guide](https://github.com/github-education-resources/)
+- [EDU Resource Guide](https://github.com/github-education-resources/edu-resource-guide)
 - [Educator & Classroom FAQ](https://github.com/orgs/community/discussions/145312)
 - [Good First Issues](https://forgoodfirstissue.github.com/)
 - [Open Source Guides](https://opensource.guide/)
@@ -73,7 +73,8 @@ Getting GitHub certified is a resounding endorsement that validates your skills,
 
 Learn about getting free GitHub Enterprise through our Campus program,  how you bring GitHub to your campus, Hackathons from an admin's perspective, how researchers use GitHub and helpful curriculum you can use in teaching.
 
-Best Practices for Setting Up Your GitHub Enterprise Account for Schools and Teachers
+- Best Practices for Setting Up Your GitHub Enterprise Account for Schools and Teachers
+- [All about Classroom](https://github.com/github-education-resources/edu-resource-guide?tab=readme-ov-file#all-things-github-classroom)
 
  ## Curriculum
 - [Intro to Web Dev for Beginners - Curriculum](https://microsoft.github.io/Web-Dev-For-Beginners/#/)
