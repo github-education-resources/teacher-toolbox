@@ -106,8 +106,13 @@ Learn about getting free GitHub Enterprise through our Campus program,  how you 
 - [Read The Turin Way Handbook to reproducible, ethical and collaborative data science](https://book.the-turing-way.org/index.html)
 - [Learn how to build an inclusive culture of open science with NASA TOPS training on Open science](https://app.openscience101.org/)
 - [Learn about Stanford University’s Living Textbook Intiative](https://digitaleducation.stanford.edu/news/living-textbooks-help-envision-era-educational-abundance)
-- Classroom Report (Archives)
 
+## Open Source Program Offices (OSPO)
+On behalf of the GitHub OSPO we are sharing our policies, tools, and best practices to guide you through the first 6-12 months of your organization's open source journey.
+
+- [GitHub OSPO resources](https://github.com/github/github-ospo?tab=readme-ov-file)
+- [Talk Openly Develop Openly](https://todogroup.org/)
+- [The OSPO Alliance](https://ospo-alliance.org/)
 
  </details>
 
