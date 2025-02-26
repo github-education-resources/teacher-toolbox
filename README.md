@@ -14,7 +14,7 @@ The GitHub Educaiton Teacher Toolbox provides support materials for teachers and
 
 ## Start here ✔️
 - Stay up to date with all resources by starring 🌟 this repository so you can always find it from your settings.
-- [Get verified as an instructor](https://education.github.com/discount_requests/application): Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
+- [Get verified as an instructor](https://education.github.com/discount_requests/application?utm_source=2025-2-27-Toolbox-Teacher): Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
 - Follow us: [LinkedIn](https://www.linkedin.com/showcase/github-education), [Instagram](https://www.instagram.com/githubeducation)
 - [Join the Discussion](https://github.com/orgs/community/discussions/categories/github-education): Our public Community forum is also a place where you can hear from peers and students
 - Give feedback: share your thoughts on the Teacher Toolbox [here](https://survey3.medallia.com/?kD0mmG-toolbox ).
@@ -122,6 +122,8 @@ On behalf of the GitHub OSPO we are sharing our policies, tools, and best practi
 </summary>
 
 Discover ways you empower your students with learner resources made just for them including the Student Developer Pack, the Campus Experts program and how they can build a tech community though our partnerships with Hack Club, MLH and Codedex.
+
+The first thing we recommend students do is [get verified](https://education.github.com/discount_requests/application?utm_source=2025-2-27-Toolbox-Student) through GitHub Education. Once verified, they'll have access to student benefits including the Student Developer Pack, a GitHub Pro badge and Copilot Pro.
 
 ## Student Resources
 - [GitHub Education for students (Docs)](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students)
