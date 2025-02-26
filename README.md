@@ -236,7 +236,7 @@ Copilot is now now available for free. With Copilot free you can get started wit
 
 
 - [Copilot 101: Video Tutorials](https://github.com/features/copilot/tutorials)
-- [How to use GitHub Copilot: Prompts, tips, and use cases](https://github.blog/developer-skills/github/how-to-write-better-prompts-for-github-copilot/)
+- [How to use GitHub Copilot: What it can do and real-world examples](https://github.blog/ai-and-ml/github-copilot/what-can-github-copilot-do-examples/)
 - [Copilot Chat Cookbook](https://docs.github.com/en/copilot/copilot-chat-cookbook)
 - [Copilot Certification materials](https://learn.microsoft.com/en-us/training/paths/copilot/)
 - [Intro to GitHub Copilot (Microsoft Learn Modules)](https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot/)
