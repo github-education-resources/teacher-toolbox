@@ -8,6 +8,7 @@ Discover ways you empower your students with learner resources made just for the
 - [Games on GitHub](https://github.com/leereilly/games): A list of open source games and game-related projects that can be found on GitHub - old school text adventures, educational games, 8-bit platform games, browser-based games, indie games, GameJam projects, add-ons/maps/hacks/plugins for commercial games, libraries, frameworks, engines, you name it.
 
 ## Campus Experts
+GitHub Campus Experts are student leaders that strive to build diverse and inclusive spaces to learn skills, share their experiences, and build projects together. GitHub Campus Experts can be found across the globe leading in-person and online conferences, meetups, and hackathons, and maintaining open-source projects.
 - [Campus Experts Program](https://github.com/education/students/campus-expert)
 - [Campus Experts Blog: How to become a Campus Expert](https://dev.to/gh-campus-experts/campus-experts-applications-august-2024-46pl)
 
