@@ -23,7 +23,9 @@ The GitHub Education Teacher Toolbox provides support materials for teachers and
 New content, upcoming opportunities or important announcements will appear here:
 - SIGCSE 2025: GitHub Day long workshop resources
   - [Using GitHub - Learn to Teach](https://github.com/user-attachments/files/19062285/Using.GitHub.in.Education.SIGCSE.2025.1.pdf) (slide deck pdf)   
-- Copilot for Beginners - Coming soon
+- Copilot for Beginners
+  - [Copilot for Beginners blog post](https://github.blog/ai-and-ml/github-copilot/github-for-beginners-how-to-get-started-with-github-copilot/)
+  - [Copilot for beginners video](https://www.youtube.com/watch?v=n0NlxUyA7FI)
 
 
 ## All Resources
