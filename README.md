@@ -3,7 +3,7 @@
 
 
 ## 👀 How to Use this Guide
-The GitHub Education Teacher Toolbox provides support materials for teachers and administrators. It is divided into the following resource types which you can click on below to go to each types dedicated page or scroll below to find all resources.
+The GitHub Education Teacher Toolbox provides support materials for teachers and administrators. It is divided into the following resource types which you can click on below to go to each types dedicated page or scroll below to find all resources. Start with the recommended pathways if you're interested in gaining an introduction to GitHub and some of it's main features or dive right into the resource types below to curate your experience.
 
 - [Educator Professional Development](https://github.com/github-education-resources/teacher-toolbox/blob/main/professional-development/professional-resources.md)
 - [Institution and Administrative Resources](https://github.com/github-education-resources/teacher-toolbox/blob/main/admin/schools-and-administrators.md)
@@ -12,14 +12,13 @@ The GitHub Education Teacher Toolbox provides support materials for teachers and
 - [Use Cases & Stories](https://github.com/github-education-resources/teacher-toolbox/blob/main/stories/stories-use-cases.md)
 - [AI in the Classroom](https://github.com/github-education-resources/teacher-toolbox/blob/main/ai-education/ai-in-education.md)
 
-## Start here ✔️
-- Stay up to date with all resources by starring 🌟 this repository so you can always find it from your settings.
-- [Get verified as an instructor](https://education.github.com/discount_requests/application?utm_source=2025-2-27-Toolbox-Teacher): Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
-- Follow us: [LinkedIn](https://www.linkedin.com/showcase/github-education), [Instagram](https://www.instagram.com/githubeducation)
-- [Join the Discussion](https://github.com/orgs/community/discussions/categories/github-education): Our public Community forum is also a place where you can hear from peers and students
-- Give feedback: share your thoughts on the Teacher Toolbox [here](https://survey3.medallia.com/?kD0mmG-toolbox ).
+## Start here: Recommended Learning Pathways
+- Intro to Git and Version Control
+- GitHub Foundations for Non-Developers
+- GitHub Issues
+- Markdown
 
-## New and Featured
+## New and Featured Resources
 New content, upcoming opportunities or important announcements will appear here:
 - SIGCSE 2025: GitHub Day long workshop resources
   - [Using GitHub - Learn to Teach](https://github.com/user-attachments/files/19062285/Using.GitHub.in.Education.SIGCSE.2025.1.pdf) (slide deck pdf)   
@@ -258,4 +257,9 @@ Copilot is now now available for free. With Copilot free you can get started wit
 
  </details>
 
-
+## Stay Connected ✔️
+- Stay up to date with all resources by starring 🌟 this repository so you can always find it from your settings.
+- [Get verified as an instructor](https://education.github.com/discount_requests/application?utm_source=2025-2-27-Toolbox-Teacher): Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
+- Follow us: [LinkedIn](https://www.linkedin.com/showcase/github-education), [Instagram](https://www.instagram.com/githubeducation)
+- [Join the Discussion](https://github.com/orgs/community/discussions/categories/github-education): Our public Community forum is also a place where you can hear from peers and students
+- Give feedback: share your thoughts on the Teacher Toolbox [here](https://survey3.medallia.com/?kD0mmG-toolbox ).
