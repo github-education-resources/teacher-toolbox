@@ -13,10 +13,11 @@ The GitHub Education Teacher Toolbox provides support materials for teachers and
 - [AI in the Classroom](https://github.com/github-education-resources/teacher-toolbox/blob/main/ai-education/ai-in-education.md)
 
 ## Start here: Recommended Learning Pathways
-- Intro to Git and Version Control
-- GitHub Foundations for Non-Developers
-- GitHub Issues
-- Markdown
+- [Intro to Git and Version Control](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/Version-Control-Git.md)
+- [GitHub Foundations for Non-Developers](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/GitHub-Foundations-Non-Developers.md)
+- [GitHub Issues](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/Github-Issues.md)
+- [Markdown](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/Markdown.md)
+- Teaching with GitHub (coming soon)
 
 ## New and Featured Resources
 New content, upcoming opportunities or important announcements will appear here:
