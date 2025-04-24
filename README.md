@@ -260,7 +260,7 @@ Copilot is now now available for free. With Copilot free you can get started wit
 
 ## Stay Connected ✔️
 - Stay up to date with all resources by starring 🌟 this repository so you can always find it from your settings.
-- [Get verified as an instructor](https://github.com/settings/education/benefits?utm_source=2025-04-25-landingpage-TeacherToolbox): Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
+- [Get verified as an instructor](https://github.com/settings/education/benefits?utm_source=2025-04-25-repo-TeacherToolbox): Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
 - Follow us: [LinkedIn](https://www.linkedin.com/showcase/github-education), [Instagram](https://www.instagram.com/githubeducation)
 - [Join the Discussion](https://github.com/orgs/community/discussions/categories/github-education): Our public Community forum is also a place where you can hear from peers and students
 - Give feedback: share your thoughts on the Teacher Toolbox [here](https://survey3.medallia.com/?kD0mmG-toolbox ).
