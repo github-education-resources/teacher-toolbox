@@ -80,6 +80,7 @@ Learn about getting free GitHub Enterprise through our Campus program,  how you 
 - [All about Classroom](https://github.com/github-education-resources/edu-resource-guide?tab=readme-ov-file#all-things-github-classroom)
 
  ## Curriculum
+- [Intro to GitHub K-12 - Code.org](https://studio.code.org/s/csa-software-engineering/lessons/2#activity-section-18269112)
 - [Intro to Web Dev for Beginners - Curriculum](https://microsoft.github.io/Web-Dev-For-Beginners/#/)
 - [Machine Learning for Beginners - Curriculum](https://microsoft.github.io/ML-For-Beginners/#/)
 - [Arm Education](https://github.com/arm-university): Educational materials created & produced by Arm Education for use by schools, universities and early career engineers
