@@ -69,7 +69,7 @@ Getting GitHub certified is a resounding endorsement that validates your skills,
 
  </details>
 
-## Administrative and Institutional Resources
+## Curriculum and Administrative Resources
 <details><summary>
 
 </summary>
@@ -85,7 +85,14 @@ Learn about getting free GitHub Enterprise through our Campus program,  how you 
 - [Machine Learning for Beginners - Curriculum](https://microsoft.github.io/ML-For-Beginners/#/)
 - [Arm Education](https://github.com/arm-university): Educational materials created & produced by Arm Education for use by schools, universities and early career engineers
 - [CS50](https://github.com/cs50): Curriculum, lectures and other resources for Harvard's Computer Science 50 course
+- [Data8 Guide](https://www.data8.org/zero-to-data-8/intro.html) - Textbooks, lectures, syllabi and a pedagogy guide for UC Berkeley's Foundations of Data Science course.
 
+**MakeCode and VSCode Curriculum** 
+- [Introduction to Computer Science with Microsoft MakeCode Arcade](https://arcade.makecode.com/courses/introCS)
+- [AP Computer Science Principles with Microsoft MakeCode Arcade](https://makecode.com/csp)
+- [Introduction to Python with Visual Studio Code for Education](https://vscodeedu.com/courses/intro-to-python)
+- [Introduction to Web Development with Visual Studio Code for Education](https://vscodeedu.com/courses/intro-to-web-dev)
+  
  ## Campus Program
 - [GitHub Campus Program - primary webpage](https://github.com/edu/schools)
 - [GitHub Campus Program - About - documentation](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-program)
