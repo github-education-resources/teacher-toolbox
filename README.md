@@ -88,6 +88,7 @@ Learn about getting free GitHub Enterprise through our Campus program,  how you 
 - [Arm Education](https://github.com/arm-university): Educational materials created & produced by Arm Education for use by schools, universities and early career engineers
 - [CS50](https://github.com/cs50): Curriculum, lectures and other resources for Harvard's Computer Science 50 course
 - [Data8 Guide](https://www.data8.org/zero-to-data-8/intro.html) - Textbooks, lectures, syllabi and a pedagogy guide for UC Berkeley's Foundations of Data Science course.
+- [Data8 course org](https://github.com/data-8) and [course calendar template](https://www.data8.org/materials-sp22/demo.html).
 
 **MakeCode and VSCode Curriculum** 
 - [Introduction to Computer Science with Microsoft MakeCode Arcade](https://arcade.makecode.com/courses/introCS)
