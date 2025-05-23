@@ -21,6 +21,7 @@ The GitHub Education Teacher Toolbox provides support materials for teachers and
 
 ## New and Featured Resources
 New content, upcoming opportunities or important announcements will appear here:
+- [Data8 Guide](https://www.data8.org/zero-to-data-8/intro.html) - Textbooks, lectures, syllabi and a pedagogy guide for UC Berkeley's Foundations of Data Science course.
 - SIGCSE 2025: GitHub Day long workshop resources
   - [Using GitHub - Learn to Teach](https://github.com/user-attachments/files/19062285/Using.GitHub.in.Education.SIGCSE.2025.1.pdf) (slide deck pdf)   
 - Copilot for Beginners
@@ -105,9 +106,6 @@ Learn about getting free GitHub Enterprise through our Campus program,  how you 
 - [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
 - [GitHub Security Policies](https://docs.github.com/en/site-policy/security-policies)
 
-## Hackathons on your campus
-- [A College Admin's Guide to Hackathons](https://mlh.io/college-administrator-hackathon-guide)
-- [A High School Admin's Guide to Hackathons](https://mlh.io/high-school-administrator-hackathon-guide)
 
 ## Research & Researchers
 - [Learn how to connect your ORCiD to your GitHub profile](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#a[%E2%80%A6]e)
@@ -134,7 +132,11 @@ On behalf of the GitHub OSPO we are sharing our policies, tools, and best practi
 
 Discover ways you empower your students with learner resources made just for them including the Student Developer Pack, the Campus Experts program and how they can build a tech community though our partnerships with Hack Club, MLH and Codedex.
 
-The first thing we recommend students do is [get verified](https://education.github.com/discount_requests/application?utm_source=2025-2-27-Toolbox-Student) through GitHub Education. Once verified, they'll have access to student benefits including the Student Developer Pack, a GitHub Pro badge and Copilot Pro.
+The first thing we recommend students do is [get verified](https://github.com/settings/education/benefits) through GitHub Education. Once verified, they'll have access to student benefits including the Student Developer Pack, a GitHub Pro badge and Copilot Pro.
+
+**Hackathons on your campus**
+- [A College Admin's Guide to Hackathons](https://mlh.io/college-administrator-hackathon-guide)
+- [A High School Admin's Guide to Hackathons](https://mlh.io/high-school-administrator-hackathon-guide)
 
 ## Student Resources
 - [GitHub Education for students (Docs)](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students)
@@ -268,7 +270,7 @@ Copilot is now now available for free. With Copilot free you can get started wit
 
 ## Stay Connected ✔️
 - Stay up to date with all resources by starring 🌟 this repository so you can always find it from your settings.
-- [Get verified as an instructor](https://github.com/settings/education/benefits?utm_source=2025-04-25-repo-TeacherToolbox): Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
+- [Get verified](https://github.com/settings/education/benefits): Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
 - Follow us: [LinkedIn](https://www.linkedin.com/showcase/github-education), [Instagram](https://www.instagram.com/githubeducation)
 - [Join the Discussion](https://github.com/orgs/community/discussions/categories/github-education): Our public Community forum is also a place where you can hear from peers and students
 - Give feedback: share your thoughts on the Teacher Toolbox [here](https://survey3.medallia.com/?kD0mmG-toolbox ).
