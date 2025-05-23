@@ -1,6 +1,12 @@
 # Empowering your students
 Discover ways you empower your students with learner resources made just for them including the Student Developer Pack, the Campus Experts program and how they can build a tech community though our partnerships with Hack Club, MLH and Codedex.
 
+The first thing we recommend students do is [get verified](https://github.com/settings/education/benefits) through GitHub Education. Once verified, they'll have access to student benefits including the Student Developer Pack, a GitHub Pro badge and Copilot Pro.
+
+**Hackathons on your campus**
+- [A College Admin's Guide to Hackathons](https://mlh.io/college-administrator-hackathon-guide)
+- [A High School Admin's Guide to Hackathons](https://mlh.io/high-school-administrator-hackathon-guide)
+
 ## Student Resources
 - [GitHub Education for students (Docs)](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students)
 - [GitHub Student Developer Pack](https://education.github.com/pack)
