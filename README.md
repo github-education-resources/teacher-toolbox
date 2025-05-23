@@ -6,7 +6,7 @@
 The GitHub Education Teacher Toolbox provides support materials for teachers and administrators. It is divided into the following resource types which you can click on below to go to each types dedicated page or scroll below to find all resources. Start with the recommended pathways if you're interested in gaining an introduction to GitHub and some of it's main features or dive right into the resource types below to curate your experience.
 
 - [Educator Professional Development](https://github.com/github-education-resources/teacher-toolbox/blob/main/professional-development/professional-resources.md)
-- [Institution and Administrative Resources](https://github.com/github-education-resources/teacher-toolbox/blob/main/admin/schools-and-administrators.md)
+- [Curriculum and Administrative Resources](https://github.com/github-education-resources/teacher-toolbox/blob/main/admin/schools-and-administrators.md)
 - [Empowering your students](https://github.com/github-education-resources/teacher-toolbox/blob/main/students/student-resources.md)
 - [Videos and Live Training](https://github.com/github-education-resources/teacher-toolbox/blob/main/events-videos/events-videos.md)
 - [Use Cases & Stories](https://github.com/github-education-resources/teacher-toolbox/blob/main/stories/stories-use-cases.md)
