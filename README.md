@@ -95,6 +95,9 @@ Learn about getting free GitHub Enterprise through our Campus program,  how you 
 - [AP Computer Science Principles with Microsoft MakeCode Arcade](https://makecode.com/csp)
 - [Introduction to Python with Visual Studio Code for Education](https://vscodeedu.com/courses/intro-to-python)
 - [Introduction to Web Development with Visual Studio Code for Education](https://vscodeedu.com/courses/intro-to-web-dev)
+
+**Sample Workshop Templates**
+- [Click here for sample workshop templates you can leverage to help your community learn how to use GitHub](https://github.com/github-education-resources/teacher-toolbox/blob/main/admin/workshop-templates.md).
   
  ## Campus Program
 - [GitHub Campus Program - primary webpage](https://github.com/edu/schools)
