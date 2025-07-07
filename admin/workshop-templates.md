@@ -3,7 +3,7 @@
 We're pleased to offer sample workshop templates you can use in order to lead workshops on using GitHub.
 
 
-## GitHub First Week Workshop Template
+## Workshop: Your First Week on GitHub 
 
 <details><summary>
 
