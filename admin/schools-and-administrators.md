@@ -33,7 +33,7 @@
 
 
 ## Research & Researchers
-- [Learn how to connect your ORCiD to your GitHub profile](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#a[%E2%80%A6]e)
+- [Learn how to connect your ORCiD to your GitHub profile](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#adding-your-orcid-id-to-your-profile)
 - [Make your repository citeable with citation files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 - [Issue a persistent identifier for your repository with Zenodo](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
 - [Add your research institution to The Research Organization Registry](https://ror.org/)
