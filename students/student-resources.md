@@ -30,6 +30,8 @@ GitHub Campus Experts are student leaders that strive to build diverse and inclu
 
 GitHub Education partners with a number of learning focused companies and organizations to support student developers starting their journeys in tech. Explore a few of our partners and how they empower students through coding challenges, hackathons, workshops and other virtual and in-person events around the world.
 
+***
+
 <img width="311" alt="mlh-logo-color" src="https://github.com/user-attachments/assets/f31db780-18e6-4f31-80d9-eb0f5648f6e6" />
 
 Major League Hacking (MLH) is the official student hackathon league. Each year, we power over 300 weekend-long invention competitions that inspire innovation, cultivate communities and teach computer science skills to more than 500,000 developers around the world. 
