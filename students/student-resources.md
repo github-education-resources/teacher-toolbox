@@ -1,24 +1,35 @@
 # Empowering your students
 Discover ways you empower your students with learner resources made just for them including the Student Developer Pack, the Campus Experts program and how they can build a tech community though our partnerships with Hack Club, MLH and Codedex.
 
+
+## Benefits and Resources for Students
+
 The first thing we recommend students do is [get verified](https://github.com/settings/education/benefits) through GitHub Education. Once verified, they'll have access to student benefits including the Student Developer Pack, a GitHub Pro badge and Copilot Pro.
+
+- [GitHub Education for students (Docs)](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students)
+- [GitHub Student Developer Pack](https://education.github.com/pack)
+- [Student Developer Pack Application FAQs & Common Rejection Reasons](https://github.com/orgs/community/discussions/111352)
+
+**Coding resources for students**
+- [Games on GitHub](https://github.com/leereilly/games): A list of open source games and game-related projects that can be found on GitHub - old school text adventures, educational games, 8-bit platform games, browser-based games, indie games, GameJam projects, add-ons/maps/hacks/plugins for commercial games, libraries, frameworks, engines, you name it.
+- From Code.org: [Explore activities for ages 5-11](https://code.org/en-US/students/elementary) including Hour of Code, Minecraft projects and more.
+- From Code.org: [Explore learning for ages 11+](https://code.org/en-US/students/middle-and-high-school) including Hour of Code, coding labs and more.
+
 
 **Hackathons on your campus**
 - [A College Admin's Guide to Hackathons](https://mlh.io/college-administrator-hackathon-guide)
 - [A High School Admin's Guide to Hackathons](https://mlh.io/high-school-administrator-hackathon-guide)
 
-## Student Resources
-- [GitHub Education for students (Docs)](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students)
-- [GitHub Student Developer Pack](https://education.github.com/pack)
-- [Student Developer Pack Application FAQs & Common Rejection Reasons](https://github.com/orgs/community/discussions/111352)
-- [Games on GitHub](https://github.com/leereilly/games): A list of open source games and game-related projects that can be found on GitHub - old school text adventures, educational games, 8-bit platform games, browser-based games, indie games, GameJam projects, add-ons/maps/hacks/plugins for commercial games, libraries, frameworks, engines, you name it.
-
+  
 ## Campus Experts
 GitHub Campus Experts are student leaders that strive to build diverse and inclusive spaces to learn skills, share their experiences, and build projects together. GitHub Campus Experts can be found across the globe leading in-person and online conferences, meetups, and hackathons, and maintaining open-source projects.
 - [Campus Experts Program](https://github.com/education/students/campus-expert)
 - [Campus Experts Blog: How to become a Campus Expert](https://dev.to/gh-campus-experts/campus-experts-applications-august-2024-46pl)
 
-## Partner resources
+## GitHub Education Partner resources
+
+GitHub Education partners with a number of learning focused companies and organizations to support student developers starting their journeys in tech. Explore a few of our partners and how they empower students through coding challenges, hackathons, workshops and other virtual and in-person events around the world.
+
 <img width="311" alt="mlh-logo-color" src="https://github.com/user-attachments/assets/f31db780-18e6-4f31-80d9-eb0f5648f6e6" />
 
 Major League Hacking (MLH) is the official student hackathon league. Each year, we power over 300 weekend-long invention competitions that inspire innovation, cultivate communities and teach computer science skills to more than 500,000 developers around the world. 
