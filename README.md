@@ -42,7 +42,6 @@ Browse through quick start guides, courses, demos and tutorials to get you start
 </summary>
 
 
-Browse through quick start guides, courses, demos and tutorials to get you started and upskilled on GitHub and Open Source. Here you'll find handy Docs and Discussions, useful repos, courses and research that will not only help you in the classroom, but along your journey using our developer tools.
 
 ## Docs, Quickstarts, Guides
 - [Quickstart for GitHub Educators](https://docs.github.com/en/education/quickstart)
