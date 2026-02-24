@@ -6,7 +6,7 @@ We had a blast at SIGCSE 2026. We were involved in 4 sessions this year and love
 #### Session 1 - Pre-Conference Full Day Workshop 
 - **Title:** GitHub for Educators: A Full-Day, Hands-On Workshop for Teaching with GitHub
 - **[Slides](https://github.com/github-education-resources/teacher-toolbox/blob/main/events-videos/sigcse-2026/GitHub%20101%20-%20Workshop.pdf)** 
-Abstract: This full-day, hands-on workshop gives educators practical, classroom-ready skills for integrating GitHub into their teaching. We”ll begin in GitHub.com with a two-hour GitHub 101 session covering account setup, repositories, collaboration essentials, an introduction to GitHub Copilot, and how to navigate GitHub’s on-demand learning resources.
+- **Abstract**: This full-day, hands-on workshop gives educators practical, classroom-ready skills for integrating GitHub into their teaching. We”ll begin in GitHub.com with a two-hour GitHub 101 session covering account setup, repositories, collaboration essentials, an introduction to GitHub Copilot, and how to navigate GitHub’s on-demand learning resources.
 In the afternoon, we'll shift to an advanced Copilot session designed specifically for teaching scenarios. From there, participants can choose among breakout tracks that align with their instructional goals or join structured work time to build lessons, course projects, or certification progress with live support from GitHub experts.
 Attendees will leave with plug-and-play classroom materials, access to GitHub Learn resources, and eligibility for GitHub certification vouchers. The workshop is designed to help educators confidently introduce real-world developer tools and AI-enhanced workflows into their curriculum.
 
