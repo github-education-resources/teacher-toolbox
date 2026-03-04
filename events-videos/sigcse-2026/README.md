@@ -1,6 +1,6 @@
 ### SIGCSE 2026
 
-We had a blast at SIGCSE 2026. We were involved in 4 sessions this year and loved meeting everyone by the entryway arch. Thanks to all those who stopped by at our un-booth or joined us in our sessions. We loved speaking with you all! Abstracts from our sessions along with links to our slides are below! 
+We had a blast at SIGCSE 2026. We were involved in 3 main sessions this year, and participated in 2 additional sessions and loved meeting everyone by the entryway arch. Thanks to all those who stopped by at our un-booth or joined us in our sessions. We loved speaking with you all! Abstracts from our primary sessions along with links to our slides are below! 
 
 
 #### Session 1 - Pre-Conference Full Day Workshop 
