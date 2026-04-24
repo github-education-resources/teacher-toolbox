@@ -174,6 +174,95 @@ jobs:
           done)
           \`\`\`
 
+          ## 💡 Recommended New Resource
+
+          $(
+          # Build a recommendation by comparing top-visited pages against
+          # existing Learning Pathways and guides in the repo.
+          #
+          # Strategy: map popular paths to topic keywords, check if a dedicated
+          # Learning Pathway or guide already exists, and recommend the
+          # highest-traffic topic that lacks one.
+
+          # Catalog existing learning pathways and guides (by filename stem)
+          existing_resources=""
+          for f in Learning-Pathways/*.md ai-education/*.md admin/*.md students/*.md professional-development/*.md; do
+            [ -f "$f" ] && existing_resources="${existing_resources} $(basename "$f" .md | tr '[:upper:]' '[:lower:]')"
+          done
+
+          # Define known topic mappings: path substring -> topic label -> expected resource filename stem
+          declare -A topic_labels
+          declare -A topic_stems
+          declare -A topic_descriptions
+          topic_labels["classroom"]="GitHub Classroom"
+          topic_stems["classroom"]="github-classroom"
+          topic_descriptions["classroom"]="A step-by-step Learning Pathway for GitHub Classroom covering assignment creation, autograding setup, roster management, and reusing assignments across semesters."
+
+          topic_labels["actions"]="GitHub Actions"
+          topic_stems["actions"]="github-actions"
+          topic_descriptions["actions"]="A Learning Pathway for GitHub Actions in education covering CI/CD basics, autograding workflows, and deploying student projects to GitHub Pages."
+
+          topic_labels["codespace"]="GitHub Codespaces"
+          topic_stems["codespace"]="codespaces"
+          topic_descriptions["codespace"]="A guide for using GitHub Codespaces in the classroom covering devcontainer setup, billing management for student use, and template repositories."
+
+          topic_labels["pages"]="GitHub Pages"
+          topic_stems["pages"]="github-pages"
+          topic_descriptions["pages"]="A guide for using GitHub Pages for student portfolios, project showcases, and course websites — connecting Markdown, Git, and Actions into a tangible outcome."
+
+          topic_labels["security"]="GitHub Security"
+          topic_stems["security"]="github-security"
+          topic_descriptions["security"]="A Learning Pathway for GitHub security features in education covering Dependabot, secret scanning, code scanning, and teaching secure coding practices."
+
+          topic_labels["copilot"]="GitHub Copilot (Advanced)"
+          topic_stems["copilot"]="copilot-advanced"
+          topic_descriptions["copilot"]="An advanced Copilot guide going beyond getting started — covering Copilot Chat workflows, custom instructions, workspace agents, and Copilot in the CLI."
+
+          topic_labels["enterprise"]="Enterprise Administration"
+          topic_stems["enterprise"]="enterprise-admin"
+          topic_descriptions["enterprise"]="A comprehensive guide for campus IT administrators on managing GitHub Enterprise for education — org structure, SSO/SAML, seat management, and policies."
+
+          topic_labels["open-source"]="Open Source in Education"
+          topic_stems["open-source"]="open-source-education"
+          topic_descriptions["open-source"]="A Learning Pathway for bringing open source practices into the classroom — contributing to real projects, licensing basics, and building student portfolios through OSS."
+
+          # Score each topic by how often its keyword appeared in top paths
+          best_topic=""
+          best_score=0
+
+          for keyword in "\${!topic_labels[@]}"; do
+            stem="\${topic_stems[$keyword]}"
+            # Skip if a resource with this stem already exists
+            if echo "$existing_resources" | grep -qi "$stem"; then
+              continue
+            fi
+
+            # Count observations of this keyword in top paths
+            score=\$(echo "$top_paths" | jq -r '.[].path // .[].title // ""' | grep -ci "$keyword" || true)
+
+            # Also check referrers for the keyword
+            ref_score=\$(echo "$top_referrers" | jq -r '.[].referrer // ""' | grep -ci "$keyword" || true)
+            score=\$((score + ref_score))
+
+            if [ "\$score" -gt "\$best_score" ]; then
+              best_score=\$score
+              best_topic=\$keyword
+            fi
+          done
+
+          # If no keyword matched from traffic, fall back to the #2 most-visited
+          # non-homepage page that lacks a learning pathway
+          if [ -z "\$best_topic" ]; then
+            # Pick the top non-overview path and suggest deepening it
+            runner_up=\$(echo "$top_paths" | jq -r '[.[] | select(.path != null and (.path | contains("Overview") | not))][0].title // "a trending topic"')
+            echo "Based on this month's traffic patterns, consider creating a deeper guide for **\${runner_up}** — it consistently appeared in your top visited pages but doesn't yet have a dedicated Learning Pathway with structured objectives, prerequisites, and a step-by-step journey."
+          else
+            label="\${topic_labels[$best_topic]}"
+            desc="\${topic_descriptions[$best_topic]}"
+            echo "Based on this month's traffic, visitors are actively looking for **\${label}** content (keyword \\\`\${best_topic}\\\` appeared in top pages \${best_score} time(s) this month). **Recommended:** \${desc}"
+          fi
+          )
+
           ---
           *This report is auto-generated by the [Monthly Traffic Report](.github/workflows/monthly-report.yml) workflow.*
           REPORT_EOF
