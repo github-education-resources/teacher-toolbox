@@ -23,9 +23,10 @@ The GitHub Education Teacher Toolbox provides support materials for teachers and
 
 ## New and Featured Resources
 New content, upcoming opportunities or important announcements will appear here:
-- [Data8 Guide](https://www.data8.org/zero-to-data-8/intro.html) - Textbooks, lectures, syllabi and a pedagogy guide for UC Berkeley's Foundations of Data Science course.
-- SIGCSE 2025: GitHub Day long workshop resources
-  - [Using GitHub - Learn to Teach](https://github.com/user-attachments/files/19062285/Using.GitHub.in.Education.SIGCSE.2025.1.pdf) (slide deck pdf)   
+- [Using GitHub Copilot in Non-CS Courses](https://github.com/github-education-resources/teacher-toolbox/blob/main/ai-education/copilot-non-cs-courses.md) - Discipline-specific use cases and prompting strategies for bringing Copilot into writing, sciences, social sciences, creative arts, humanities, and math courses.
+- [GitHub Actions for Educators](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/GitHub-Actions.md) - A new Learning Pathway covering Actions fundamentals, classroom autograding, deploying to GitHub Pages, and certification prep.
+- GitHub Copilot CLI Video Series
+  - [GitHub Copilot CLI Video Series (YouTube playlist)](https://www.youtube.com/watch?v=BDxRhhs36ns&list=PL0lo9MOBetEHvO-spzKBAITkkTqv4RvNl)
 - Copilot for Beginners
   - [Copilot for Beginners blog post](https://github.blog/ai-and-ml/github-copilot/github-for-beginners-how-to-get-started-with-github-copilot/)
   - [Copilot for beginners video](https://www.youtube.com/watch?v=n0NlxUyA7FI)
