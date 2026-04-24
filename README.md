@@ -19,7 +19,6 @@ The GitHub Education Teacher Toolbox provides support materials for teachers and
 - [Markdown](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/Markdown.md)
 - [Getting Started with GitHub Copilot](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/Getting-started-with-copilot.md)
 - [GitHub Actions for Educators](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/GitHub-Actions.md)
-- Teaching with GitHub (coming soon)
 
 ## New and Featured Resources
 New content, upcoming opportunities or important announcements will appear here:
@@ -207,8 +206,7 @@ Students can join global community of students who are passionate about building
 
 </summary>
 
-Explore upcoming EDU events, live streams and video demos hosted by our team, Campus Experts and partners
-
+Sign up for June's [GitHub Educator Summit](https://luma.com/33sjoe63)
 ## Coming soon: Live trainings for teachers
 
 ## Events
