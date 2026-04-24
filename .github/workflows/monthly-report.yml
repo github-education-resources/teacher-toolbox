@@ -1,0 +1,228 @@
+name: Monthly Traffic Report
+
+on:
+  schedule:
+    # Runs on the 2nd of each month at 08:00 UTC
+    # (gives the 1st a full day to settle before aggregating)
+    - cron: '0 8 2 * *'
+  workflow_dispatch:
+    inputs:
+      month:
+        description: 'Month to report on (YYYY-MM). Defaults to previous month.'
+        required: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate monthly report
+        id: report
+        run: |
+          set -euo pipefail
+
+          DATA_DIR="_data/traffic/daily"
+          REPORT_DIR="_data/traffic/reports"
+          mkdir -p "$REPORT_DIR"
+
+          # Determine which month to report on
+          if [ -n "${{ github.event.inputs.month || '' }}" ]; then
+            REPORT_MONTH="${{ github.event.inputs.month }}"
+          else
+            # Default to previous month
+            REPORT_MONTH=$(date -u -d "last month" +%Y-%m 2>/dev/null || date -u -v-1m +%Y-%m)
+          fi
+
+          echo "Generating report for: ${REPORT_MONTH}"
+          echo "report_month=${REPORT_MONTH}" >> "$GITHUB_OUTPUT"
+
+          YEAR=$(echo "$REPORT_MONTH" | cut -d- -f1)
+          MONTH=$(echo "$REPORT_MONTH" | cut -d- -f2)
+
+          # Collect all daily files for the target month
+          total_views=0
+          total_views_unique=0
+          total_clones=0
+          total_clones_unique=0
+          days_with_data=0
+          peak_views_day=""
+          peak_views_count=0
+
+          # Aggregate paths and referrers across all snapshots in the month
+          all_paths_file=$(mktemp)
+          all_referrers_file=$(mktemp)
+          echo "[]" > "$all_paths_file"
+          echo "[]" > "$all_referrers_file"
+
+          for file in "${DATA_DIR}/${REPORT_MONTH}"-*.json; do
+            [ -f "$file" ] || continue
+            days_with_data=$((days_with_data + 1))
+
+            day_views=$(jq -r '.views.count // 0' "$file")
+            day_views_unique=$(jq -r '.views.uniques // 0' "$file")
+            day_clones=$(jq -r '.clones.count // 0' "$file")
+            day_clones_unique=$(jq -r '.clones.uniques // 0' "$file")
+
+            total_views=$((total_views + day_views))
+            total_views_unique=$((total_views_unique + day_views_unique))
+            total_clones=$((total_clones + day_clones))
+            total_clones_unique=$((total_clones_unique + day_clones_unique))
+
+            if [ "$day_views" -gt "$peak_views_count" ]; then
+              peak_views_count=$day_views
+              peak_views_day=$(jq -r '.date' "$file")
+            fi
+
+            # Merge paths snapshots (accumulate counts by path)
+            jq -s '
+              [ .[0] + .[1] | group_by(.path) | .[] |
+                {path: .[0].path, title: .[0].title,
+                 count: ([.[].count] | add),
+                 uniques: ([.[].uniques] | max),
+                 observations: length} ]
+            ' "$all_paths_file" <(jq '.paths_snapshot // []' "$file") > "${all_paths_file}.tmp"
+            mv "${all_paths_file}.tmp" "$all_paths_file"
+
+            # Merge referrers snapshots
+            jq -s '
+              [ .[0] + .[1] | group_by(.referrer) | .[] |
+                {referrer: .[0].referrer,
+                 count: ([.[].count] | add),
+                 uniques: ([.[].uniques] | max),
+                 observations: length} ]
+            ' "$all_referrers_file" <(jq '.referrers_snapshot // []' "$file") > "${all_referrers_file}.tmp"
+            mv "${all_referrers_file}.tmp" "$all_referrers_file"
+          done
+
+          # Sort paths and referrers by observation frequency, then by count
+          top_paths=$(jq '[sort_by(-.observations, -.count) | .[:10] | .[] |
+            {path: .path, title: .title, observations: .observations}]' "$all_paths_file")
+
+          top_referrers=$(jq '[sort_by(-.observations, -.count) | .[:10] | .[] |
+            {referrer: .referrer, observations: .observations}]' "$all_referrers_file")
+
+          # Check for previous month report (for comparison)
+          if [ "$MONTH" = "01" ]; then
+            prev_year=$((YEAR - 1))
+            prev_month="12"
+          else
+            prev_year=$YEAR
+            prev_month=$(printf "%02d" $((10#$MONTH - 1)))
+          fi
+          prev_report="${REPORT_DIR}/${prev_year}-${prev_month}.md"
+          prev_views="N/A"
+          if [ -f "$prev_report" ]; then
+            prev_views=$(grep -oP 'Total Views: \*\*\K[0-9,]+' "$prev_report" 2>/dev/null || echo "N/A")
+          fi
+
+          # Calculate days in month
+          days_in_month=$(cal "$((10#$MONTH))" "$YEAR" | awk 'NF {DAYS = $NF}; END {print DAYS}')
+          missing_days=$((days_in_month - days_with_data))
+
+          # Build the Markdown report
+          REPORT_FILE="${REPORT_DIR}/${REPORT_MONTH}.md"
+
+          cat > "$REPORT_FILE" << REPORT_EOF
+          # 📊 Monthly Traffic Report: ${REPORT_MONTH}
+
+          *Generated on $(date -u +%Y-%m-%d) | Data collected from ${days_with_data}/${days_in_month} days*
+
+          $([ "$missing_days" -gt 0 ] && echo "> ⚠️ **${missing_days} day(s) of data missing this month.** Some totals may be understated." || echo "")
+
+          ## Summary
+
+          | Metric | Total | Unique |
+          |--------|------:|-------:|
+          | Views | ${total_views} | ${total_views_unique} |
+          | Clones | ${total_clones} | ${total_clones_unique} |
+
+          - **Peak day:** ${peak_views_day} (${peak_views_count} views)
+          - **Daily average:** $((total_views / (days_with_data > 0 ? days_with_data : 1))) views/day
+          $([ "$prev_views" != "N/A" ] && echo "- **vs. previous month:** ${prev_views} total views" || echo "- *No previous month data for comparison*")
+
+          ## Most Visited Pages
+
+          *Based on rolling 14-day snapshots observed during the month. Ranked by how frequently a page appeared in the daily top-10.*
+
+          | Rank | Page | Times in Top 10 |
+          |------|------|----------------:|
+          $(echo "$top_paths" | jq -r 'to_entries | .[] | "| \(.key + 1) | \(.value.title // .value.path) | \(.value.observations) |"')
+
+          ## Top Referrers
+
+          *Rolling 14-day snapshot highlights — not precise monthly totals.*
+
+          | Rank | Source | Times in Top 10 |
+          |------|--------|----------------:|
+          $(echo "$top_referrers" | jq -r 'to_entries | .[] | "| \(.key + 1) | \(.value.referrer) | \(.value.observations) |"')
+
+          ## Daily Views
+
+          \`\`\`
+          $(for file in "${DATA_DIR}/${REPORT_MONTH}"-*.json; do
+            [ -f "$file" ] || continue
+            date=$(jq -r '.date' "$file")
+            views=$(jq -r '.views.count // 0' "$file")
+            bar=$(printf '%*s' "$((views / 3))" '' | tr ' ' '█')
+            printf "%-12s %4d %s\n" "$date" "$views" "$bar"
+          done)
+          \`\`\`
+
+          ---
+          *This report is auto-generated by the [Monthly Traffic Report](.github/workflows/monthly-report.yml) workflow.*
+          REPORT_EOF
+
+          # Remove leading whitespace from heredoc
+          sed -i 's/^          //' "$REPORT_FILE"
+
+          echo "report_file=${REPORT_FILE}" >> "$GITHUB_OUTPUT"
+          echo "total_views=${total_views}" >> "$GITHUB_OUTPUT"
+          echo "total_clones=${total_clones}" >> "$GITHUB_OUTPUT"
+          echo "days_with_data=${days_with_data}" >> "$GITHUB_OUTPUT"
+
+          # Clean up temp files
+          rm -f "$all_paths_file" "$all_referrers_file"
+
+          echo "✅ Report generated: ${REPORT_FILE}"
+
+      - name: Commit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/traffic/reports/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "docs: add monthly traffic report for ${{ steps.report.outputs.report_month }}"
+            git push
+          fi
+
+      - name: Create or update GitHub Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPORT_MONTH="${{ steps.report.outputs.report_month }}"
+          REPORT_FILE="${{ steps.report.outputs.report_file }}"
+          TITLE="📊 Monthly Traffic Report: ${REPORT_MONTH}"
+
+          # Check if an issue already exists for this month
+          existing=$(gh issue list --search "\"${TITLE}\" in:title" --json number --jq '.[0].number // empty')
+
+          body=$(cat "$REPORT_FILE")
+
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --body "$body"
+            echo "✅ Updated existing issue #${existing}"
+          else
+            gh issue create \
+              --title "$TITLE" \
+              --body "$body" \
+              --label "traffic-report"
+            echo "✅ Created new issue"
+          fi

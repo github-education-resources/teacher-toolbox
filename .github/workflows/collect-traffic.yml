@@ -1,0 +1,149 @@
+name: Collect Traffic Data
+
+on:
+  schedule:
+    # Runs daily at 06:00 UTC to capture the previous full UTC day
+    - cron: '0 6 * * *'
+  workflow_dispatch: {} # Manual trigger for backfill or recovery
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch traffic data and save daily snapshots
+        env:
+          # A fine-grained PAT with repo read/write access is required
+          # because the traffic API needs push-level permissions.
+          # Create one at https://github.com/settings/tokens and add it
+          # as a repository secret named TRAFFIC_TOKEN.
+          GH_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          DATA_DIR="_data/traffic/daily"
+          mkdir -p "$DATA_DIR"
+
+          echo "::group::Fetching views"
+          views=$(gh api "repos/${REPO}/traffic/views" --jq '.')
+          echo "$views"
+          echo "::endgroup::"
+
+          echo "::group::Fetching clones"
+          clones=$(gh api "repos/${REPO}/traffic/clones" --jq '.')
+          echo "$clones"
+          echo "::endgroup::"
+
+          echo "::group::Fetching popular paths (rolling 14-day snapshot)"
+          paths=$(gh api "repos/${REPO}/traffic/popular/paths" --jq '.')
+          echo "$paths"
+          echo "::endgroup::"
+
+          echo "::group::Fetching popular referrers (rolling 14-day snapshot)"
+          referrers=$(gh api "repos/${REPO}/traffic/popular/referrers" --jq '.')
+          echo "$referrers"
+          echo "::endgroup::"
+
+          # Normalize views by metric date (rewrite last 14 days to handle corrections)
+          echo "$views" | jq -c '.views[]' | while read -r day; do
+            date=$(echo "$day" | jq -r '.timestamp' | cut -dT -f1)
+            count=$(echo "$day" | jq -r '.count')
+            uniques=$(echo "$day" | jq -r '.uniques')
+
+            file="${DATA_DIR}/${date}.json"
+
+            if [ -f "$file" ]; then
+              # Update existing file with latest view data
+              updated=$(jq \
+                --argjson vc "$count" \
+                --argjson vu "$uniques" \
+                '.views = {count: $vc, uniques: $vu}' "$file")
+            else
+              # Create new daily record
+              updated=$(jq -n \
+                --arg d "$date" \
+                --argjson vc "$count" \
+                --argjson vu "$uniques" \
+                '{date: $d, views: {count: $vc, uniques: $vu}, clones: {count: 0, uniques: 0}, paths_snapshot: [], referrers_snapshot: []}')
+            fi
+            echo "$updated" > "$file"
+          done
+
+          # Normalize clones by metric date
+          echo "$clones" | jq -c '.clones[]' | while read -r day; do
+            date=$(echo "$day" | jq -r '.timestamp' | cut -dT -f1)
+            count=$(echo "$day" | jq -r '.count')
+            uniques=$(echo "$day" | jq -r '.uniques')
+
+            file="${DATA_DIR}/${date}.json"
+
+            if [ -f "$file" ]; then
+              updated=$(jq \
+                --argjson cc "$count" \
+                --argjson cu "$uniques" \
+                '.clones = {count: $cc, uniques: $cu}' "$file")
+            else
+              updated=$(jq -n \
+                --arg d "$date" \
+                --argjson cc "$count" \
+                --argjson cu "$uniques" \
+                '{date: $d, views: {count: 0, uniques: 0}, clones: {count: $cc, uniques: $cu}, paths_snapshot: [], referrers_snapshot: []}')
+            fi
+            echo "$updated" > "$file"
+          done
+
+          # Attach rolling paths/referrers snapshot to today's record only
+          today=$(date -u +%Y-%m-%d)
+          file="${DATA_DIR}/${today}.json"
+
+          if [ -f "$file" ]; then
+            updated=$(jq \
+              --argjson p "$paths" \
+              --argjson r "$referrers" \
+              '.paths_snapshot = $p | .referrers_snapshot = $r' "$file")
+          else
+            updated=$(jq -n \
+              --arg d "$today" \
+              --argjson p "$paths" \
+              --argjson r "$referrers" \
+              '{date: $d, views: {count: 0, uniques: 0}, clones: {count: 0, uniques: 0}, paths_snapshot: $p, referrers_snapshot: $r}')
+          fi
+          echo "$updated" > "$file"
+
+          echo "✅ Daily traffic data saved/updated"
+
+      - name: Check for data gaps
+        run: |
+          DATA_DIR="_data/traffic/daily"
+          # Warn if there are gaps in the last 14 days
+          missing=0
+          for i in $(seq 1 14); do
+            check_date=$(date -u -d "-${i} days" +%Y-%m-%d 2>/dev/null || date -u -v-${i}d +%Y-%m-%d)
+            if [ ! -f "${DATA_DIR}/${check_date}.json" ]; then
+              echo "⚠️  Missing data for ${check_date}"
+              missing=$((missing + 1))
+            fi
+          done
+          if [ "$missing" -gt 0 ]; then
+            echo "::warning::${missing} day(s) of data missing in the last 14 days. Consider running workflow_dispatch to backfill."
+          else
+            echo "✅ No data gaps in the last 14 days"
+          fi
+
+      - name: Commit traffic data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/traffic/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update daily traffic data $(date -u +%Y-%m-%d)"
+            git push
+          fi
