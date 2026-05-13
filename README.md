@@ -3,7 +3,7 @@
 
 
 ## 👀 How to Use this Guide
-The GitHub Education Teacher Toolbox provides support materials for teachers and administrators. It is divided into the following resource types which you can click on below to go to each types dedicated page or scroll below to find all resources. Start with the recommended pathways if you're interested in gaining an introduction to GitHub and some of it's main features or dive right into the resource types below to curate your experience.
+The GitHub Education Teacher Toolbox provides support materials for teachers and administrators. It is divided into the following resource types which you can click on below to go to each types dedicated page.
 
 - [Educator Professional Development](https://github.com/github-education-resources/teacher-toolbox/blob/main/professional-development/professional-resources.md)
 - [Curriculum and Administrative Resources](https://github.com/github-education-resources/teacher-toolbox/blob/main/admin/schools-and-administrators.md)
@@ -22,8 +22,9 @@ The GitHub Education Teacher Toolbox provides support materials for teachers and
 
 ## New and Featured Resources
 New content, upcoming opportunities or important announcements will appear here:
-- [Using GitHub Copilot in Non-CS Courses](https://github.com/github-education-resources/teacher-toolbox/blob/main/ai-education/copilot-non-cs-courses.md) - Discipline-specific use cases and prompting strategies for bringing Copilot into writing, sciences, social sciences, creative arts, humanities, and math courses.
-- [GitHub Actions for Educators](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/GitHub-Actions.md) - A new Learning Pathway covering Actions fundamentals, classroom autograding, deploying to GitHub Pages, and certification prep.
+- [Using GitHub Copilot in Non-CS Courses](https://github.com/github-education-resources/teacher-toolbox/blob/main/ai-education/copilot-non-cs-courses.md) - Discipline-specific use cases and prompt ideas for educators teaching outside of computer science.
+- [GitHub Actions for Educators](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/GitHub-Actions.md) - A new Learning Pathway covering Actions fundamentals, workflow concepts and classroom-friendly automation ideas.
+- [Maintainer Month for Academia](https://maintainermonth.github.com/academia) - Resources and programming for researchers, maintainers, and academic open source communities.
 - GitHub Copilot CLI Video Series
   - [GitHub Copilot CLI Video Series (YouTube playlist)](https://www.youtube.com/watch?v=BDxRhhs36ns&list=PL0lo9MOBetEHvO-spzKBAITkkTqv4RvNl)
 - Copilot for Beginners
@@ -37,7 +38,7 @@ New content, upcoming opportunities or important announcements will appear here:
 
 
 ## Educator Professional Development
-Browse through quick start guides, courses, demos and tutorials to get you started and upskilled on GitHub and Open Source. Here you'll find handy Docs and Discussions, useful repos, courses and research that will not only help you in the classroom, but along your journey using our developer tools.
+Browse through quick start guides, courses, demos and tutorials to get you started and upskilled on GitHub and Open Source. Here you'll find handy Docs and Discussions, useful repos, courses and resources for GitHub product training and Open Source. 
 <details><summary>
 
 </summary>
@@ -54,14 +55,14 @@ Browse through quick start guides, courses, demos and tutorials to get you start
 - [Open Source Guides](https://opensource.guide/)
 
 ## Certifications
-Getting GitHub certified is a resounding endorsement that validates your skills, credibility, trust, and knowledge of the technologies and developer tools that are used by more than 100 million developers worldwide. All Certifications are now available in English, Japanese, Korean, Portuguese, and Spanish. Prepare with resources available on [MS Learn](https://learn.microsoft.com/en-us/training/github/) and [trusted partners](https://resources.github.com/learn/training-partners/). For more details, check out our [FAQs](https://examregistration.github.com/faq) or contact the certifications team at gh-certification@github.com.
+Getting GitHub certified is a resounding endorsement that validates your skills, credibility, trust, and knowledge of the technologies and developer tools that are used by more than 100 million developers worldwide. 
 
 - [All Certifications](https://resources.github.com/learn/certifications/).
-- [GitHub Foundations](https://examregistration.github.com/certification/GHF), [pdf study guide](https://assets.ctfassets.net/wfutmusr1t3h/1kmMx7AwI4qH8yIZgOmQlP/79e6ff1dfdee589d84a24dd763b1eef7/github-foundations-exam-study-guide__1_.pdf)
-- [GitHub Actions](https://examregistration.github.com/certification/ACTIONS), [pdf study guide](https://assets.ctfassets.net/wfutmusr1t3h/2mMJ6nECbUAdiQMTObbPw6/67cfbffa68fed774a1d280c6c1346635/github-actions-exam-preparation-study-guide__3_.pdf)
-- [GitHub Advanced Security](https://examregistration.github.com/certification/GHAS), [pdf study guide](https://assets.ctfassets.net/wfutmusr1t3h/4WQrNeENScZlISZKdknVbK/fa664e4ba61056df9194331de18aec0b/github-advanced-security-exam-preparation-study-guide__4_.pdf)
-- [GitHub Administration](https://examregistration.github.com/certification/ADMIN), [pdf study guide](https://assets.ctfassets.net/wfutmusr1t3h/5zTfUfFWQknwoUVA1SAw0o/16e2f7904ae2f5cdeb7d91ad32d4547e/github-administration-exam-preparation-study-guide__2_.pdf)
-- [GitHub Copilot](https://examregistration.github.com/certification/COPILOT), [pdf study guide](https://assets.ctfassets.net/wfutmusr1t3h/3i7ISEUsTLBgOGrWrML07y/dd586e2b2b607988e2679ed8cce36a76/github-copilot-exam-preparation-study-guide.pdf)
+- [GitHub Foundations](https://examregistration.github.com/certification/GHF), [pdf study guide](https://assets.ctfassets.net/wfutmusr1t3h/1kmMx7AwI4qH8yIZgOmQlP/79e6ff1dfdee589d84a24dd763b1eef7/github-foundations-exam-prep-study-guide__1_.pdf)
+- [GitHub Actions](https://examregistration.github.com/certification/ACTIONS), [pdf study guide](https://assets.ctfassets.net/wfutmusr1t3h/2mMJ6nECbUAdiQMTObbPw6/67cfbffa68fed774a1d280c6c1346635/github-actions-exam-prep-study-guide__1_.pdf)
+- [GitHub Advanced Security](https://examregistration.github.com/certification/GHAS), [pdf study guide](https://assets.ctfassets.net/wfutmusr1t3h/4WQrNeENScZlISZKdknVbK/fa664e4ba61056df9194331de18c467/github-advanced-security-exam-prep-study-guide__1_.pdf)
+- [GitHub Administration](https://examregistration.github.com/certification/ADMIN), [pdf study guide](https://assets.ctfassets.net/wfutmusr1t3h/5zTfUfFWQknwoUVA1SAw0o/16e2f7904ae2f5cdeb7d91ad32d45881/github-admin-exam-prep-study-guide__1_.pdf)
+- [GitHub Copilot](https://examregistration.github.com/certification/COPILOT), [pdf study guide](https://assets.ctfassets.net/wfutmusr1t3h/3i7ISEUsTLBgOGrWrML07y/dd586e2b2b607988e2679ed8cce36a76/github-copilot-exam-prep-study-guide__1_.pdf)
 
 ## Courses
 - [Intro to VS Code for Education](https://learn.microsoft.com/en-us/training/modules/visual-studio-code-education-introduction/)
@@ -79,7 +80,7 @@ Here you'll find out of the box, open source curriculum, information about our C
 
 </summary>
 
-Learn about getting free GitHub Enterprise through our Campus program,  how you bring GitHub to your campus, Hackathons from an admin's perspective, how researchers use GitHub and helpful curriculum you can use in teaching.
+Learn about getting free GitHub Enterprise through our Campus program,  how you bring GitHub to your campus, Hackathons from an admin's perspective, how researchers use GitHub and helpful curriculum to get started.
 
 - [Best Practices for Setting Up Your GitHub Enterprise Account for Schools and Teachers](https://github.com/github-education-resources/teacher-toolbox/blob/main/admin/enterprise-arch.md)
 - [All about Classroom](https://github.com/github-education-resources/edu-resource-guide?tab=readme-ov-file#all-things-github-classroom)
@@ -100,11 +101,11 @@ Learn about getting free GitHub Enterprise through our Campus program,  how you 
 - [Introduction to Web Development with Visual Studio Code for Education](https://vscodeedu.com/courses/intro-to-web-dev)
 
 **Sample Workshop Templates**
-- [Click here for sample workshop templates you can leverage to help your community learn how to use GitHub](https://github.com/github-education-resources/teacher-toolbox/blob/main/admin/workshop-templates.md).
+- [Click here for sample workshop templates you can leverage to help your community learn how to use GitHub](https://github.com/github-education-resources/teacher-toolbox/blob/main/admin/workshop-templates.md)
   
  ## Campus Program
 - [GitHub Campus Program - primary webpage](https://github.com/edu/schools)
-- [GitHub Campus Program - About - documentation](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-program)
+- [GitHub Campus Program - About - documentation](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution)
 - [About GitHub Enterprise Cloud](https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud)
 - [About GitHub Enterprise Server](https://docs.github.com/en/enterprise-server@3.9/admin/overview/about-github-enterprise-server)
 - [How to add Enterprise Owners](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/inviting-people-to-manage-your-enterprise)
@@ -116,13 +117,14 @@ Learn about getting free GitHub Enterprise through our Campus program,  how you 
 
 
 ## Research & Researchers
-- [Learn how to connect your ORCiD to your GitHub profile](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#a[%E2%80%A6]e)
+- [Learn how to connect your ORCiD to your GitHub profile](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#displaying-badges-on-your-profile)
 - [Make your repository citeable with citation files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 - [Issue a persistent identifier for your repository with Zenodo](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
 - [Add your research institution to The Research Organization Registry](https://ror.org/)
 - [Read The Turin Way Handbook to reproducible, ethical and collaborative data science](https://book.the-turing-way.org/index.html)
 - [Learn how to build an inclusive culture of open science with NASA TOPS training on Open science](https://app.openscience101.org/)
 - [Learn about Stanford University’s Living Textbook Intiative](https://digitaleducation.stanford.edu/news/living-textbooks-help-envision-era-educational-abundance)
+- [Maintainer Month for Academia](https://maintainermonth.github.com/academia)
 
 ## Open Source Program Offices (OSPO)
 On behalf of the GitHub OSPO we are sharing our policies, tools, and best practices to guide you through the first 6-12 months of your organization's open source journey.
@@ -135,7 +137,7 @@ On behalf of the GitHub OSPO we are sharing our policies, tools, and best practi
 
 ## Empowering your students
 
-Discover ways you empower your students with learner resources made just for them including the Student Developer Pack, the Campus Experts program and how they can build a tech community though our partnerships with Hack Club, MLH and Codedex.
+Discover ways you empower your students with learner resources made just for them including the Student Developer Pack, the Campus Experts program and how they can build a tech community though open source. We also share our curated list of partners including student hackathons and coding educational resources. 
 
  <details><summary>
 
@@ -143,14 +145,14 @@ Discover ways you empower your students with learner resources made just for the
 
 ## Benefits and Resources for Students
 
-The first thing we recommend students do is [get verified](https://github.com/settings/education/benefits) through GitHub Education. Once verified, they'll have access to student benefits including the Student Developer Pack, a GitHub Pro badge and Copilot Pro.
+The first thing we recommend students do is [get verified](https://github.com/settings/education/benefits) through GitHub Education. Once verified, they'll have access to student benefits including the Student Developer Pack, free use of Copilot Pro and more. Find resources and opportunities for your students below.
 
 - [GitHub Education for students (Docs)](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students)
 - [GitHub Student Developer Pack](https://education.github.com/pack)
 - [Student Developer Pack Application FAQs & Common Rejection Reasons](https://github.com/orgs/community/discussions/111352)
 
 **Coding resources for students**
-- [Games on GitHub](https://github.com/leereilly/games): A list of open source games and game-related projects that can be found on GitHub - old school text adventures, educational games, 8-bit platform games, browser-based games, indie games, GameJam projects, add-ons/maps/hacks/plugins for commercial games, libraries, frameworks, engines, you name it.
+- [Games on GitHub](https://github.com/leereilly/games): A list of open source games and game-related projects that can be found on GitHub - old school text adventures, educational games, 8-bit platformers, clones of old arcade games and more.
 - From Code.org: [Explore activities for ages 5-11](https://code.org/en-US/students/elementary) including Hour of Code, Minecraft projects and more.
 - From Code.org: [Explore learning for ages 11+](https://code.org/en-US/students/middle-and-high-school) including Hour of Code, coding labs and more.
 
@@ -159,17 +161,17 @@ The first thing we recommend students do is [get verified](https://github.com/se
 - [A High School Admin's Guide to Hackathons](https://mlh.io/high-school-administrator-hackathon-guide)
 
 ## Campus Experts
-GitHub Campus Experts are student leaders that strive to build diverse and inclusive spaces to learn skills, share their experiences, and build projects together. GitHub Campus Experts can be found across the globe leading in-person and online conferences, meetups, and hackathons, and maintaining open-source projects. 
+GitHub Campus Experts are student leaders that strive to build diverse and inclusive spaces to learn skills, share their experiences, and build projects together. GitHub Campus Experts can be found on campuses worldwide. 
 - [Campus Experts Program](https://github.com/education/students/campus-expert)
 - [Campus Experts Blog: How to become a Campus Expert](https://dev.to/gh-campus-experts/campus-experts-applications-august-2024-46pl)
 
 ## GitHub Education Partner resources
 
-GitHub Education partners with a number of learning focused companies and organizations to support student developers starting their journeys in tech. Explore a few of our partners and how they empower students through coding challenges, hackathons, workshops and other virtual and in-person events around the world.
+GitHub Education partners with a number of learning focused companies and organizations to support student developers starting their journeys in tech. Explore a few of our partners and how they empower students below.
 
 <img width="311" alt="mlh-logo-color" src="https://github.com/user-attachments/assets/f31db780-18e6-4f31-80d9-eb0f5648f6e6" />
 
-Major League Hacking (MLH) is the official student hackathon league. Each year, we power over 300 weekend-long invention competitions that inspire innovation, cultivate communities and teach computer science skills to more than 500,000 developers around the world. 
+Major League Hacking (MLH) is the official student hackathon league. Each year, we power over 300 weekend-long invention competitions that inspire innovation, cultivate communities and teach computer science skills to students around the world. If your campus or student group are interested in hosting a hackathon, here are some resources to get you started: 
 - [MLH Hackathons](https://mlh.io/seasons/2025/events)
 - [Global Hack Week](https://ghw.mlh.io/?_gl=1*kacql5*_ga*MTUzNDE5NTQ2OS4xNzI3MTA1NjA5*_ga_E5KT6TC4TK*MTczOTI5ODM2OS4zNS4xLjE3MzkzMDAwNjguMC4wLjA.)
 - [MLH Student Hackathon Organizer Guide](https://github.com/MLH/mlh-hackathon-organizer-guide/blob/master/SUMMARY.md)
@@ -187,15 +189,15 @@ Hack Club is a worldwide community of high school hackers. By the students, for 
 
  
 [Microsoft Learn Student Hub](https://learn.microsoft.com/en-us/training/student-hub/?WT.mc_id=StudentContent__-web-cxa)
-Dive into the world of AI with our comprehensive resources and use your creativity and passion to dream up an imaginary destination, then prompt Copilot to create and refine writings and visuals to tell its story. Grow as student founder or tech leader, explore cutting-edge Microsoft AI technology, and develop technical skills that align with your interests and aspirations.
+Dive into the world of AI with our comprehensive resources and use your creativity and passion to dream up an imaginary destination, then prompt Copilot to create and refine writings and visuals to bring it to life. Explore cloud, AI, and data with challenges and enhance your learning through events and training. Start your journey to becoming the next generation of tech innovators.
  
 - [Microsoft student ambassadors](https://mvp.microsoft.com/studentambassadors)
-Students can join global community of students who are passionate about building AI-driven solutions with Microsoft technology. Accelerate innovation and grow the skills you need to have greater impact in the projects and communities that matter to you. Student Ambassadors complete activities and make contributions to the community in order to progress through milestones and unlock additional benefits.
+Students can join global community of students who are passionate about building AI-driven solutions with Microsoft technology. Accelerate innovation and grow the skills you need to have greater impact in the projects and communities that matter to you.
 
 ***
 ![codedex](https://github.com/user-attachments/assets/968a7e4d-3e6b-4497-8493-3dc7cac6b5a0)
 
-[Codédex](https://www.codedex.io/courses) is a learn-to-code platform for Gen Z with courses in Python, HTML, CSS, JavaScript, React, Git & GitHub, Command Line, and more. Students and teachers alike are welcome to start their coding journey with Codédex. Be sure to check out their [community space](https://www.codedex.io/community) featuring monthly challenges, workshops, hackathons, campus tours and more.
+[Codédex](https://www.codedex.io/courses) is a learn-to-code platform for Gen Z with courses in Python, HTML, CSS, JavaScript, React, Git & GitHub, Command Line, and more. Students and teachers can access many of their resources. 
 
 
  </details>
@@ -256,14 +258,14 @@ Here you'll find a host of Copilot information you can use in the classroom as w
 <img width="1355" alt="Screenshot 2025-02-13 at 1 39 41 PM" src="https://github.com/user-attachments/assets/81a582e5-267d-441a-8a4e-bd198915d7aa" />
 
 
-GitHub Copilot is an AI coding assistant that helps you write code faster and with less effort, allowing you to focus more energy on problem solving and collaboration. GitHub Copilot includes a suite of features. You can use Copilot to:
+GitHub Copilot is an AI coding assistant that helps you write code faster and with less effort, allowing you to focus more energy on problem solving and collaboration. GitHub Copilot includes a suite of tools across your IDE, GitHub.com and the command line and can support students and teachers in a number of tasks. 
 
 - Get code suggestions as you type in your IDE
 - Chat with Copilot to ask for help with your code
 - Ask Copilot for help using the command line
 
 Accessing Copilot
-Copilot is now now available for free. With Copilot free you can get started with up to 50 chats per month, up to 2,000 code completions and much more. As a verified teacher, you'll have access to Copilot pro which includes unlimited chats, code completions and access to other Pro features.
+Copilot is now now available for free. With Copilot free you can get started with up to 50 chats per month, up to 2,000 code completions and much more. As a verified teacher, you'll have access to Copilot Pro. GitHub also offers Copilot Business and Copilot Enterprise for organizations. 
 
 
 - [Copilot 101: Video Tutorials](https://github.com/features/copilot/tutorials)
@@ -281,14 +283,14 @@ Copilot is now now available for free. With Copilot free you can get started wit
 - [Commons: Open Educational Resources, Resources for Teaching AI](https://oercommons.org/curated-collections/1518)
 - [How do AI tools impact novice programmers?](https://www.youtube.com/watch?v=kjw6UbZZSFY)
 - [Train the Trainer: Unlocking Generative AI Toolkit](https://www.youtube.com/watch?v=dNfTI9HFhdA)
-- [Unlock generative AI safely and responsibly—classroom toolkit](https://learn.microsoft.com/en-us/training/educator-center/instructor-materials/classroom-toolkit-unlock-generative-ai-safely-responsibly?culture=en-us&country=us)
+- [Unlock generative AI safely and responsibly—classroom toolkit](https://learn.microsoft.com/en-us/training/educator-center/instructor-materials/classroom-toolkit-unlock-generative-ai-safely-responsibly)
 - [Building LATAM’s future tech workforce with AI](https://github.blog/developer-skills/github-education/building-latams-future-tech-workforce-with-ai/)
 
  </details>
 
 ## Stay Connected ✔️
 - Stay up to date with all resources by starring 🌟 this repository so you can always find it from your settings.
-- [Get verified](https://github.com/settings/education/benefits): Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to our private, teachers only Discussion forum.
+- [Get verified](https://github.com/settings/education/benefits): Getting verified means you will gain access to enhanced tooling on GitHub including free use of Copilot Pro, more Codespaces storage and access to the Student Developer Pack.
 - Follow us: [LinkedIn](https://www.linkedin.com/showcase/github-education), [Instagram](https://www.instagram.com/githubeducation)
 - [Join the Discussion](https://github.com/orgs/community/discussions/categories/github-education): Our public Community forum is also a place where you can hear from peers and students
 - Give feedback: share your thoughts on the Teacher Toolbox [here](https://survey3.medallia.com/?kD0mmG-toolbox ).
