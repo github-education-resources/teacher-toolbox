@@ -1,6 +1,6 @@
 ## Getting Started with GitHub Copilot
 
-GitHub Copilot is available for free with all GitHub accounts by going to github.com/copilot. If you are a verified student or teacher through GitHub Education, you will also be able to enable Copilot Pro on your account.
+GitHub Copilot is available for free with all GitHub accounts by going to github.com/copilot. Verified teachers get GitHub Copilot Pro, and verified students get a student version of Copilot. 
 
 **Learning Objectives:** 
 - Explain what GitHub Copilot is and how to enable it on your GitHub account
