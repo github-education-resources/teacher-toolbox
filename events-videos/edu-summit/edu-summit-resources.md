@@ -19,6 +19,6 @@
 ## GitHub Organization Docs: Organizations and teams documentation 		
 - GitHub Campus Program Docs: https://docs.github.com/en/education/about-github-education/use-github-at-your-educational-institut…			
 - GitHub Admin training: https://learn.github.com/certification/ADMIN			
-- If you want more hand-held support (paid): GitHub Admin Training (GitHub Enterprise Cloud) | Expert Services | GitHub			
+- If you want more hand-held support (paid):  (GitHub Enterprise Cloud) [| Expert Services | GitHub	](https://github.com/services/admin-training-github-enterprise-cloud)		
 
 ## Day 3
