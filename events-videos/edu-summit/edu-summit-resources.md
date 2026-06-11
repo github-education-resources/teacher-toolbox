@@ -17,8 +17,9 @@
 - Awesome GitHub Copilot	https://awesome-copilot.github.com/		
 
 ## GitHub Organization Docs: Organizations and teams documentation 		
-- GitHub Campus Program Docs: https://docs.github.com/en/education/about-github-education/use-github-at-your-educational-institut…			
+- GitHub Campus Program Docs:https://docs.github.com/en/education/about-github-education/use-github-at-your-educational-institution/about-github-campus-program
 - GitHub Admin training: https://learn.github.com/certification/ADMIN			
-- If you want more hand-held support (paid):  (GitHub Enterprise Cloud) [| Expert Services | GitHub	](https://github.com/services/admin-training-github-enterprise-cloud)		
+- If you want more hand-held support (paid):  [(GitHub Enterprise Cloud) | Expert Services | GitHub	](https://github.com/services/admin-training-github-enterprise-cloud)		
 
 ## Day 3
+- _coming soon!_
