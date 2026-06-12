@@ -24,4 +24,14 @@
 - If you want more hand-held support (paid):  [(GitHub Enterprise Cloud) | Expert Services | GitHub	](https://github.com/services/admin-training-github-enterprise-cloud)		
 
 ## Day 3
-- _coming soon!_
+Recommended partner solutions for the Classroom transition:  
+- [Codio]( https://www.codio.com/github-classroom)
+   - [Case Studies](https://www.codio.com/case-studies/)
+   - [Webinars](https://www.codio.com/on-demand-webinars)
+   - [Codio Desktop App](https://www.codio.com/download)
+   - [VS Code Install](https://docs.codio.com/common/develop/ide/editing/vscode.html#vscode)
+   - [Starter Packs](https://docs.codio.com/develop/develop/packs/packs.html)
+   - [Connecting Codio Box to a GitHub Repo](https://docs.codio.com/common/develop/ide/editing/connect-github-codio.html#connecting-a-codio-box-to-a-github-repo)
+   - [Course Setup](https://docs.codio.com/setupcourses.html)
+   - Contact: help@codio.com
+- [Classroom 50](https://github.com/foundation50/classroom50/wiki) 
