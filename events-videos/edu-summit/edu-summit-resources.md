@@ -33,5 +33,6 @@ Recommended partner solutions for the Classroom transition:
    - [Starter Packs](https://docs.codio.com/develop/develop/packs/packs.html)
    - [Connecting Codio Box to a GitHub Repo](https://docs.codio.com/common/develop/ide/editing/connect-github-codio.html#connecting-a-codio-box-to-a-github-repo)
    - [Course Setup](https://docs.codio.com/setupcourses.html)
+   - [Modifying Assignments](https://docs.codio.com/instructors/setupcourses/modify-assignments.html#re-publish-assignment-that-students-have-already-started)
    - Contact: help@codio.com
 - [Classroom 50](https://github.com/foundation50/classroom50/wiki) 
