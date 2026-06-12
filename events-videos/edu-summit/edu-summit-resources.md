@@ -35,4 +35,9 @@ Recommended partner solutions for the Classroom transition:
    - [Course Setup](https://docs.codio.com/setupcourses.html)
    - [Modifying Assignments](https://docs.codio.com/instructors/setupcourses/modify-assignments.html#re-publish-assignment-that-students-have-already-started)
    - Contact: help@codio.com
-- [Classroom 50](https://github.com/foundation50/classroom50/wiki) 
+- [Classroom 50](https://github.com/foundation50/classroom50/wiki)
+   - [Harvard's CS50 course](https://www.edx.org/cs50)
+   - [Fifty Foundation Mailing List](https://fifty.foundation/)
+   - [Classroom 50 on GitHub](https://github.com/foundation50/classroom50)
+   - [Classroom 50 GitHub Discussion forum](https://github.com/foundation50/classroom50/discussions)
+   - [Compare50, CS50 docs](https://cs50.readthedocs.io/projects/compare50/en/latest/)
