@@ -6,7 +6,7 @@
 ## Day 2			
 - Geoffrey's site	https://www.geoffreychallen.com/talks
 - Using and Undersanding AI (Geoffrey's CS199 course)	https://www.usingandunderstanding.ai/educators
-- Consortion for Gen AI in CSEd (Leo Porter's group)
+- Consortium for Gen AI in CSEd (Leo Porter's group)
     - [Site](https://www.teachcswithai.org/) 
     - [Slack](https://genaiincsedco-xug6366.slack.com/join/shared_invite/zt-40m705lar-fAYGMXfzncjbD7r2uMTXCA#/shared-invite/email)
 - [Cory Gwin](https://corygwin.com/)	
