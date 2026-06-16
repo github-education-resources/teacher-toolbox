@@ -5,6 +5,7 @@
 			
 ## Day 2			
 - Geoffrey's site	https://www.geoffreychallen.com/talks
+  - The New Computing [Educator Summit Working Group Talk and Slides](https://www.geoffreychallen.com/talks/2026-06-09-the-new-computing)
 - Using and Undersanding AI (Geoffrey's CS199 course)	https://www.usingandunderstanding.ai/educators
 - Consortium for Gen AI in CSEd (Leo Porter's group)
     - [Site](https://www.teachcswithai.org/) 
