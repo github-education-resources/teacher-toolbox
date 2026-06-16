@@ -1,3 +1,8 @@
+## Educator Summit Resource Hub
+
+### Session Video Recordings
+- [All session recordings can be found in this playlist](https://www.youtube.com/watch?v=Y4m1scY5MEc&list=PLTCsqQXUDomQ&pp=sAgC)
+
 ## Day 1			
 - Pj resource site https://learnwithpj.com/
 - GitHub Skills	https://learn.github.com/skills
