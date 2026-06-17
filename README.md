@@ -13,7 +13,6 @@ The GitHub Education Teacher Toolbox provides support materials for teachers and
 - [AI in the Classroom](https://github.com/github-education-resources/teacher-toolbox/blob/main/ai-education/ai-in-education.md)
 
 ## Start here: Recommended Learning Pathways
-- [GitHub Educator Summit Resources and Session Recordings](https://github.com/github-education-resources/teacher-toolbox/blob/main/events-videos/edu-summit/edu-summit-resources.md)
 - [Intro to Git and Version Control](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/Version-Control-Git.md)
 - [GitHub Foundations for Non-Developers](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/GitHub-Foundations-Non-Developers.md)
 - [GitHub Issues](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/Github-Issues.md)
@@ -23,6 +22,7 @@ The GitHub Education Teacher Toolbox provides support materials for teachers and
 
 ## New and Featured Resources
 New content, upcoming opportunities or important announcements will appear here:
+- [GitHub Educator Summit Resources and Session Recordings](https://github.com/github-education-resources/teacher-toolbox/blob/main/events-videos/edu-summit/edu-summit-resources.md)
 - [Using GitHub Copilot in Non-CS Courses](https://github.com/github-education-resources/teacher-toolbox/blob/main/ai-education/copilot-non-cs-courses.md) - Discipline-specific use cases and prompt ideas for educators teaching outside of computer science.
 - [GitHub Actions for Educators](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/GitHub-Actions.md) - A new Learning Pathway covering Actions fundamentals, workflow concepts and classroom-friendly automation ideas.
 - [Maintainer Month for Academia](https://maintainermonth.github.com/academia) - Resources and programming for researchers, maintainers, and academic open source communities.
