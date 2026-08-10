@@ -249,36 +249,36 @@ jobs:
           best_topic=""
           best_score=0
 
-          for keyword in "\${!topic_labels[@]}"; do
-            stem="\${topic_stems[$keyword]}"
+          for keyword in "${!topic_labels[@]}"; do
+            stem="${topic_stems[$keyword]}"
             # Skip if a resource with this stem already exists
             if echo "$existing_resources" | grep -qi "$stem"; then
               continue
             fi
 
             # Count observations of this keyword in top paths
-            score=\$(echo "$top_paths" | jq -r '.[].path // .[].title // ""' | grep -ci "$keyword" || true)
+            score=$(echo "$top_paths" | jq -r '.[].path // .[].title // ""' | grep -ci "$keyword" || true)
 
             # Also check referrers for the keyword
-            ref_score=\$(echo "$top_referrers" | jq -r '.[].referrer // ""' | grep -ci "$keyword" || true)
-            score=\$((score + ref_score))
+            ref_score=$(echo "$top_referrers" | jq -r '.[].referrer // ""' | grep -ci "$keyword" || true)
+            score=$((score + ref_score))
 
-            if [ "\$score" -gt "\$best_score" ]; then
-              best_score=\$score
-              best_topic=\$keyword
+            if [ "$score" -gt "$best_score" ]; then
+              best_score=$score
+              best_topic=$keyword
             fi
           done
 
           # If no keyword matched from traffic, fall back to the #2 most-visited
           # non-homepage page that lacks a learning pathway
-          if [ -z "\$best_topic" ]; then
+          if [ -z "$best_topic" ]; then
             # Pick the top non-overview path and suggest deepening it
-            runner_up=\$(echo "$top_paths" | jq -r '[.[] | select(.path != null and (.path | contains("Overview") | not))][0].title // "a trending topic"')
-            echo "Based on this month's traffic patterns, consider creating a deeper guide for **\${runner_up}** — it consistently appeared in your top visited pages but doesn't yet have a dedicated Learning Pathway with structured objectives, prerequisites, and a step-by-step journey."
+            runner_up=$(echo "$top_paths" | jq -r '[.[] | select(.path != null and (.path | contains("Overview") | not))][0].title // "a trending topic"')
+            echo "Based on this month's traffic patterns, consider creating a deeper guide for **${runner_up}** — it consistently appeared in your top visited pages but doesn't yet have a dedicated Learning Pathway with structured objectives, prerequisites, and a step-by-step journey."
           else
-            label="\${topic_labels[$best_topic]}"
-            desc="\${topic_descriptions[$best_topic]}"
-            echo "Based on this month's traffic, visitors are actively looking for **\${label}** content (keyword \\\`\${best_topic}\\\` appeared in top pages \${best_score} time(s) this month). **Recommended:** \${desc}"
+            label="${topic_labels[$best_topic]}"
+            desc="${topic_descriptions[$best_topic]}"
+            echo "Based on this month's traffic, visitors are actively looking for **${label}** content (keyword \`${best_topic}\` appeared in top pages ${best_score} time(s) this month). **Recommended:** ${desc}"
           fi
           )
 
