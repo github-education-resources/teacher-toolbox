@@ -320,6 +320,11 @@ jobs:
         run: |
           set -euo pipefail
 
+          if [ "$(gh api "repos/${GITHUB_REPOSITORY}" --jq '.has_issues')" != "true" ]; then
+            echo "Repository Issues are disabled; skipping issue publication"
+            exit 0
+          fi
+
           TITLE="📊 Monthly Traffic Report: ${REPORT_MONTH}"
 
           # Ensure the label exists (idempotent)
