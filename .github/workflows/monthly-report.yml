@@ -24,6 +24,9 @@ jobs:
 
       - name: Generate monthly report
         id: report
+        shell: bash
+        env:
+          REQUESTED_MONTH: ${{ github.event.inputs.month || '' }}
         run: |
           set -euo pipefail
 
@@ -32,8 +35,12 @@ jobs:
           mkdir -p "$REPORT_DIR"
 
           # Determine which month to report on
-          if [ -n "${{ github.event.inputs.month || '' }}" ]; then
-            REPORT_MONTH="${{ github.event.inputs.month }}"
+          if [ -n "$REQUESTED_MONTH" ]; then
+            if [[ ! "$REQUESTED_MONTH" =~ ^[0-9]{4}-(0[1-9]|1[0-2])$ ]]; then
+              echo "::error::month must use YYYY-MM format"
+              exit 1
+            fi
+            REPORT_MONTH="$REQUESTED_MONTH"
           else
             # Default to previous month
             REPORT_MONTH=$(date -u -d "last month" +%Y-%m 2>/dev/null || date -u -v-1m +%Y-%m)
@@ -121,8 +128,20 @@ jobs:
             prev_views=$(grep -oP 'Total Views: \*\*\K[0-9,]+' "$prev_report" 2>/dev/null || echo "N/A")
           fi
 
-          # Calculate days in month
-          days_in_month=$(cal "$((10#$MONTH))" "$YEAR" | awk 'NF {DAYS = $NF}; END {print DAYS}')
+          # Calculate days in month without relying on the `cal` utility
+          if [ "$MONTH" = "12" ]; then
+            next_month_year=$((YEAR + 1))
+            next_month="01"
+          else
+            next_month_year=$YEAR
+            next_month=$(printf "%02d" $((10#$MONTH + 1)))
+          fi
+
+          days_in_month=$(
+            date -u -d "${next_month_year}-${next_month}-01 - 1 day" +%d 2>/dev/null ||
+            date -u -j -f "%Y-%m-%d" "${next_month_year}-${next_month}-01" -v-1d +%d
+          )
+          days_in_month=$((10#$days_in_month))
           missing_days=$((days_in_month - days_with_data))
 
           # Build the Markdown report
@@ -293,12 +312,21 @@ jobs:
           fi
 
       - name: Create or update GitHub Issue
+        shell: bash
         env:
+          REPORT_MONTH: ${{ steps.report.outputs.report_month }}
+          REPORT_FILE: ${{ steps.report.outputs.report_file }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          REPORT_MONTH="${{ steps.report.outputs.report_month }}"
-          REPORT_FILE="${{ steps.report.outputs.report_file }}"
+          set -euo pipefail
+
           TITLE="📊 Monthly Traffic Report: ${REPORT_MONTH}"
+
+          # Ensure the label exists (idempotent)
+          gh label create "traffic-report" \
+            --description "Automated monthly traffic reports" \
+            --color "1d76db" \
+            2>/dev/null || true
 
           # Check if an issue already exists for this month
           existing=$(gh issue list --search "\"${TITLE}\" in:title" --json number --jq '.[0].number // empty')
