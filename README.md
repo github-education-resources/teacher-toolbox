@@ -22,6 +22,7 @@ The GitHub Education Teacher Toolbox provides support materials for teachers and
 
 ## New and Featured Resources
 New content, upcoming opportunities or important announcements will appear here:
+- [GitHub Classroom transition information and resources](https://github.com/github-education-resources/teacher-toolbox/blob/main/admin/classroom-transition.md)
 - [GitHub Educator Summit Resources and Session Recordings](https://github.com/github-education-resources/teacher-toolbox/blob/main/events-videos/edu-summit/edu-summit-resources.md)
 - [Using GitHub Copilot in Non-CS Courses](https://github.com/github-education-resources/teacher-toolbox/blob/main/ai-education/copilot-non-cs-courses.md) - Discipline-specific use cases and prompt ideas for educators teaching outside of computer science.
 - [GitHub Actions for Educators](https://github.com/github-education-resources/teacher-toolbox/blob/main/Learning-Pathways/GitHub-Actions.md) - A new Learning Pathway covering Actions fundamentals, workflow concepts and classroom-friendly automation ideas.
